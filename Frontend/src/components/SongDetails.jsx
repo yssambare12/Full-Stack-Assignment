@@ -15,7 +15,7 @@ function Album() {
   
   const getAlbums = () => {
     axios
-      .get(`http://localhost:2345/album/${name}`)
+      .get(`http://localhost:2345/album/$`)
       .then(({ data }) => {
         // console.log("res:", data);
         setSongs(data.songs);
@@ -25,20 +25,20 @@ function Album() {
 
   return (
     <div>
-      <h1>Albums</h1>
+      <h1>Songs</h1>
       {songs
         ? songs.map((s) => {
             return (
-              <div className="albums-songs" key={s._id}>
+              <div className="songs" key={s._id}>
                 <div>
                   <img src={s.poster[0]} alt="" />
                 </div>
                 <div>
                   <h3>{s.name}</h3>
-                  <p>Year: {s.album_id.year}</p>
+                  <p>Relese Year: {s.year}</p>
                 </div>
                 <div>
-                  <h5>Duration: {s.duration}</h5>
+                  <h5>Song Duration: {s.timing}</h5>
                 </div>
                 <div>
                   <h5>{s.album_id.genre}</h5>
@@ -46,7 +46,6 @@ function Album() {
               </div>
             );
           })
-        : null}
     </div>
   );
 }

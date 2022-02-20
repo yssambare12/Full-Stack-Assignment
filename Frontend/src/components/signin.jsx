@@ -7,18 +7,15 @@ function Login() {
   const navigate = useNavigate();
   const handleChange = (e) => {
     let { name, value } = e.target;
-    // id = id === "basic_email" ? "email" : "password";
-    // console.log(id,value)
+
     setUserData({ ...userData, [name]: value });
   };
   const handleClick = (e) => {
     e.preventDefault();
-    // console.log("userdata", userData);
     axios
       .post("http://localhost:2345/login", userData)
       .then((response) => {
         alert("Verified Successfully!");
-        //set token 
         sessionStorage.setItem("user", JSON.stringify(response.data.user));
         navigate("/");
       })
