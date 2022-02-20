@@ -1,0 +1,13 @@
+const express = require("express");
+const cors = require("cors");
+const app = express();
+app.use(cors());
+app.use(express.json());
+const { register, login } = require("./controllers/auth.controller");
+const albumController = require("./controllers/album.controller");
+const songsController = require("./controllers/songs.controller");
+app.post("/signin", login);
+app.post("/signup", register);
+app.use("/songdetails", albumController);
+app.use("/allsongs", songsController);
+module.exports = app;

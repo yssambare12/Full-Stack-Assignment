@@ -1,0 +1,197 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.logo-div {
+  width: 100px;
+}
+.logo-div > a > img {
+  width: 100%;
+}
+
+.podcast-div {
+  width: 50px;
+}
+.podcast-div > img {
+  width: 10%;
+}
+
+.navbar-left-group {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-div {
+  margin: auto 5%;
+}
+
+.login-form,
+.register {
+  width: 35%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  margin: 5% auto;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.login-form button {
+  width: 30%;
+  margin: auto;
+  font-size: 20px;
+  background-color: rgb(48, 33, 180);
+  margin-bottom: 10px;
+  border: 1px solid rgb(84, 34, 202);
+  border-radius: 5px;
+  color: white;
+}
+
+.login-form button :nth-child(){
+  margin-left: 20%;
+}
+
+.login-form span {
+  font-weight: bold;
+}
+
+.register > form > input {
+  margin: 2% auto;
+  font-size: 20px;
+  padding: 5px;
+}
+.register button {
+  width: 20%;
+  margin: auto;
+  font-size: 20px;
+  background-color: rgb(49, 15, 143);
+  margin-bottom: 10px;
+  border: 1px solid rgb(63, 28, 161);
+  border-radius: 5px;
+}
+
+.register span {
+  font-weight: bold;
+}
+
+.albums {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.albums button{
+  margin-top: 100px;
+}
+
+.album-img-div {
+  width: 100px;
+  height: 300px;
+}
+
+.album-img-div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.login-form button :nth-child(){
+  margin-left: 20%;
+}
+
+.login-form span {
+  font-weight: bold;
+}
+
+.register > form > input {
+  margin: 2% auto;
+  font-size: 20px;
+  padding: 5px;
+}
+.register button {
+  width: 20%;
+  margin: auto;
+  font-size: 20px;
+  background-color: rgb(49, 15, 143);
+  margin-bottom: 10px;
+  border: 1px solid rgb(63, 28, 161);
+  border-radius: 5px;
+}
+
+.register span {
+  font-weight: bold;
+}
+
+.albums-songs {
+  padding: 100px 50px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+ 
+}
+
+.albums-songs > div {
+  height: 100px;
+}
+
+.albums-songs img {
+  height: 100%;
+}
+
+.login-form button :nth-child(){
+  margin-left: 20%;
+}
+
+.login-form span {
+  font-weight: bold;
+}
+
+.register > form > input {
+  margin: 2% auto;
+  font-size: 20px;
+  padding: 5px;
+}
+.register button {
+  width: 20%;
+  margin: auto;
+  font-size: 20px;
+  background-color: rgb(49, 15, 143);
+  margin-bottom: 10px;
+  border: 1px solid rgb(63, 28, 161);
+  border-radius: 5px;
+}
+
+.register span {
+  font-weight: bold;
+}
